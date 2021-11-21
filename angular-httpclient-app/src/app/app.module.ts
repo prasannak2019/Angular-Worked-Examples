@@ -29,6 +29,9 @@ import { EmployeesListComponent } from './employees-list/employees-list.componen
     HttpClientModule,
     FormsModule
   ],
+  exports : [
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RestApiService } from "../shared/rest-api.service";
-
+import { RestApiService } from '../service/rest-api.service';
 @Component({
   selector: 'app-employees-list',
   templateUrl: './employees-list.component.html',
@@ -32,6 +31,6 @@ export class EmployeesListComponent implements OnInit {
         this.loadEmployees()
       })
     }
-  }  
+  }
 
 }

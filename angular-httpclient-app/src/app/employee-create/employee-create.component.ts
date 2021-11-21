@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { RestApiService } from "../shared/rest-api.service";
+import { RestApiService } from "../service/rest-api.service";
 
 @Component({
   selector: 'app-employee-create',
@@ -12,7 +12,7 @@ export class EmployeeCreateComponent implements OnInit {
   @Input() employeeDetails = { name: '', email: '', phone: 0 }
 
   constructor(
-    public restApi: RestApiService, 
+    public restApi: RestApiService,
     public router: Router
   ) { }
 
